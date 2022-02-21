@@ -21,12 +21,10 @@ mongoose
 }).then(console.log("connectted to mongodb"))
 .catch((err) => console.log(err));
 
-
 app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);
 app.use("/api/posts", postRoute);
 app.use("/api/categories", categoryRoute);
-
 
 app.listen(PORT, ()=>{
     console.log('Running Backend.');
